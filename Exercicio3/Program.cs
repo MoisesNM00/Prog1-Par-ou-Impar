@@ -1,18 +1,20 @@
 ﻿using System;
 
-namespace Exercicio_1___Par_ou_Impar
+namespace Exercicio3
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
+            
+            Console.WriteLine(args[0]);
 
             bool opcao = true;
 
             while (opcao == true)
             {
                 //Entrada do numero a ser calculado.
-                
+
                 Console.WriteLine("Escreva um numero: ");
                 _ = float.TryParse(Console.ReadLine(), out float n1);
 
@@ -30,7 +32,7 @@ namespace Exercicio_1___Par_ou_Impar
                 //Menu para finalizar ou continuar o teste.
                 Console.WriteLine("Deseja sair do teste?\n 1 - Sim.\n 2 - Não.");
                 int.TryParse(Console.ReadLine(), out int saida);
-                switch (saida)                    
+                switch (saida)
                 {
 
                     case 1:
